@@ -358,10 +358,11 @@ top: 8rem;
   display: none;
 }
 
-.right-h {
- position: relative;
+ .right-h {
+ position: flex;
  background: none;
-}
+ 
+}   
 .muscle-rate {
   display: none;
 }
@@ -392,10 +393,12 @@ font-size: 1rem;
  left: 7rem;
  top: 4rem;
  align-self: center;*/
- position: relative;
+ 
+   
+ position: absolute;
   width: 13rem;
-  left: 9rem;
-  top: -30rem;
+  left: 12rem;
+  top: -28rem;
   align-self: center;
   z-index: -1;
 
