@@ -9,7 +9,7 @@ const Coach = () => {
  const tLength = testimonialsData.length;
 
   return (
-    <div className='Coach'>
+    <div className='coach'>
     <div className='left-t'> 
      <span>Coaches</span>
      <span className='stroke-text'>What they</span>
