@@ -25,7 +25,7 @@ gap: 1rem;
 .category {
  display: flex;
  flex-direction: column;
- background-color: gray;
+ background-color: var(--darkGrey);
 padding: 2rem;
 gap: 1rem;
 color: white;

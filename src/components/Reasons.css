@@ -27,12 +27,12 @@
  grid-column: 2/4;
 }
 .left-r>:nth-child(3) {
- width: 14rem;
+ width: 15rem;
  grid-column: 2/3;
 grid-row: 2;
 }
 .left-r>:nth-child(4) {
- width: 10rem;
+ width: 8rem;
 grid-row: 2;
 grid-column: 3/4;
 height: 11.2rem;
@@ -68,13 +68,19 @@ height: 11.2rem;
  display: flex;
  font-size: 1rem;
  gap: 1rem;
+
 }
 .details-r>div>img{
  width: 2rem;
  height: 2rem;
+margin-top: -0.3rem;
 }
 
-@media screen and (max-width: 768px) { 
+
+
+
+
+@media screen and (max-width: 868px) { 
 .Reasons {
  flex-direction: column;
 
@@ -94,11 +100,11 @@ height: 11.2rem;
  height: 10rem;
 }
 .left-r>:nth-child(3) {
- width: 7rem;
+ width: 8rem;
  
 }
 .left-r>:nth-child(4) {
- width: 7rem;
+ width: 5.6rem;
  height: 6rem;
 }
 }

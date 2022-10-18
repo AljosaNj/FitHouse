@@ -5,25 +5,37 @@ import HeroImage from '../assets/fit6.png'
 import Fit from '../assets/fit3.png'
 import Muscle from '../assets/muscle.png'
 import Run from '../assets/fit2.png'
+import ColGreen from '../assets/green.png'
 
+import {motion} from 'framer-motion'
 
 const Hero = () => {
+
+  const transition = {type: 'spring', duration: 3}
+  const mobile = window.innerWidth<=768 ? true: false;
   return (
     <div className='hero'>
+
+      <div className='blur hero-blur'></div>
      <div className='left-h'>
      <Header/>
      <div className='the-best-ad'>
-      <div></div>
-      <span>the best fitnes club in town</span>
+      <motion.div 
+      initial={{left:mobile?'165px':'238px'}}
+      whileInView={{left:'8px'}}
+      transition={{...transition,type:'tween'}}>
+
+      </motion.div>
+      <span>the best fitness club in the town</span>
      </div>
      {/*hero heading */}
      <div className='hero-text'>
         <div>
           <span className='stroke-text'>Shape</span>
-          <span>Your</span>
+          <span>your</span>
           </div>
           <div>
-            <span>Ideal body</span>
+            <span>ideal body</span>
           </div>
           <div ><span>in here we will help you to shape and<br/> build your body and live up your life to fullest 
             </span>
@@ -33,11 +45,11 @@ const Hero = () => {
      <div className='figures'>
    <div>
     <span>+140</span>
-    <span>expert coachs</span>
+    <span>different exercises</span>
    </div>
      <div>
     <span>+978</span>
-    <span>members joined</span>
+    <span>of our members</span>
    </div>
      <div>
     <span>+50</span>
@@ -53,30 +65,41 @@ const Hero = () => {
 <div className='right-h'>
 <button className='btn'>Join Now</button>
 
-<div className='heart-rate'>
+<motion.div 
+initial={{right:'-1rem'}}
+whileInView={{right:'4rem'}}
+transition={transition}
+className='heart-rate'>
   <img src={Fit} alt=""/>
   <span>Build Strength</span>
  {/*<span>116 bpm</span> */} 
-</div>
-<div className='muscle-rate'>
+</motion.div>
+<div 
+className='muscle-rate'>
   <img src={Muscle} alt=""/>
   <span>Build Muscles</span>
-  
+    <div className='blur hero-blur'></div>
 </div>
 
 
  {/*Hero images */}
+
 <img  src={HeroImage} alt='' className='hero-image'/>
+<img  src={ColGreen}  alt=''  className='hero-green'  />
 {/*<img src={HeroBack}  alt='' className='hero-image-back'/>*/}
 {/*calories */}
-<div className='calories'>
+<motion.div
+initial={{right:'37rem'}}
+whileInView={{right:'27rem'}}
+transition={transition}
+className='calories'>
  <img  src={Run} alt=''/>
  <div>
   <span>Burning calories</span>
  {/*<span>220 kcal</span> */}
  </div>
  
-</div>
+</motion.div>
 </div>
     </div>
   )

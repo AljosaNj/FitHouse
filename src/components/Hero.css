@@ -13,7 +13,7 @@
 .right-h {
  flex: 1;
  position: relative;
- background-color: var(--green);
+ /*background-color: var(--green);*/
 }
 
 .the-best-ad{
@@ -51,7 +51,7 @@
  text-transform: uppercase;
  font-size: 4.5rem;
  font-weight: bold;
- color: var(--darkgreen);
+ color: var(--darkGrey);
  text-overflow: inherit;
 
 }
@@ -81,7 +81,7 @@ color: var(--darkgreen);
 
 .figures>div>span:nth-of-type(2) {
  
- color: var(--gray);
+ color: var(--darkGrey);
 text-transform: uppercase;
 }
 .hero-buttons{
@@ -195,7 +195,7 @@ color: white;
   align-items: start;
   border-radius: 5px;
   position: absolute;
-  right: 33rem;
+  right: 30rem;
   top: 7rem;
 }
 
@@ -224,9 +224,17 @@ position: absolute;
  top: 4rem;
  right: 8rem;
  width: 20rem;
-
-
 }
+.hero-green {
+  position: absolute;
+    top: 11rem;
+    right: 4rem;
+    width: 36rem;
+    z-index: -1;
+}
+
+
+
 
 .hero-image-back {
  /*position: absolute;
@@ -280,7 +288,11 @@ position: absolute;
  left: 0;
 }
 
-
+.hero-blur{
+  width: 22rem;
+  height: 30rem;
+  left: 0;
+}
 
 
 
@@ -292,21 +304,35 @@ position: absolute;
   top: 10rem;
   right:3rem;
   width: 15rem;*/
-  
-  z-index: -1;
-  right: 16rem;
+ 
+ z-index: -1;
+  right: 14rem;
   top: 5rem;
   }
+.hero-green {
+  /*position: absolute;
+  top: 10rem;
+  right:3rem;
+  width: 15rem;*/
+
+  z-index: -2;
+  right: 14rem;
+  top: 5rem;
+}
+
 
 .calories {
-  right: 3rem;
+display: none;
 }
+
 .muscle-rate {
-right: 4rem;
+right: 5rem;
 top: 8rem;
+display: none;
 }
 .heart-rate {
  top: 21rem;
+ display: none;
 }
 
 }
@@ -388,24 +414,22 @@ top: 8rem;
 font-size: 1rem;
 }*/
 .hero-image {
-/* position: relative;
- width: 15rem;
- left: 7rem;
- top: 4rem;
- align-self: center;*/
+ 
  
    
- position: absolute;
+/* position: absolute;
   width: 13rem;
   left: 12rem;
   top: -28rem;
   align-self: center;
-  z-index: -1;
+  z-index: -1;*/
 
-
+display: none;
 }
 
-
+.hero-green{
+  display: none;
+}
 
 
 
