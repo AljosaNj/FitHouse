@@ -13,7 +13,7 @@
 }
 
 .left-t>:nth-child(1){
- color: var(--orange);
+ color: var(--greenCard);
  font-weight: bold;
 }
 
@@ -49,7 +49,7 @@
  position: absolute;
  width: 17rem;
  height: 20rem;
- border: 2px solid orange;
+ border: 2px solid #7DCE13;
  background-color: transparent;
  right: 9rem;
  top: 0.9rem;
@@ -61,7 +61,7 @@
  height: 19rem;
  right: 7rem;
  top: 4rem;
- background: var(--planCard);
+ background: var(--planGreen);
 }
 .arrows{
  display: flex;
@@ -75,7 +75,7 @@
  cursor: pointer;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 867px){
 .coach {
  flex-direction: column;
 }

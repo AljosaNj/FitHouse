@@ -41,7 +41,7 @@
  transform: scale(1.1);
 }
 .plan>svg{
- fill: var(--orange);
+ fill: var(--green);
  width: 2rem;
  height: 2rem;
 }

@@ -1,8 +1,8 @@
 import React,{useState} from 'react';
 import './Coach.css';
 import {testimonialsData} from '../data/testimonialsData';
-import leftArrow from '../assets/leftArrow.png';
-import rightArrow from '../assets/rightArrow.png';
+import leftArrow from '../assets/leftar.png';
+import rightArrow from '../assets/rightar.png';
 import {motion} from 'framer-motion';
 
 const Coach = () => {
@@ -15,8 +15,8 @@ const transition = {type: 'spring', duration: 3};
     <div className='coach'>
     <div className='left-t'> 
      <span>Coaches</span>
-     <span className='stroke-text'>What they</span>
-     <span>say about us</span>
+     <span className='stroke-text'>FitHouse</span>
+     <span>Our Team</span>
      <span>
       {testimonialsData[selected].review}
      </span>
@@ -45,12 +45,13 @@ const transition = {type: 'spring', duration: 3};
      </motion.div>
  <img  src={testimonialsData[selected].image}  alt=''/>
  <div className='arrows'>
-  <img  
+  <img 
   onClick={()=>{
    selected===0
    ? setSelected(tLength - 1)
    : setSelected((prev) => prev -1)
   }}
+  
   src={leftArrow} alt=''/>
   <img
   onClick={()=> {
