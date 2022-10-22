@@ -3,16 +3,21 @@ import './Header.css'
 import Logo from '../assets/logo1.png'
 //import Bars from '../assets/bars.png'
 import { FaBars,FaTimes } from "react-icons/fa";
+import { themeContext } from '../Context';
+import { useContext } from 'react';
 
 const Header = () => {
 const [click, setClick] = useState(false);
  const handleClick = () => setClick(!click);
 
+ const theme = useContext(themeContext);
+ const darkMode = theme.state.darkMode
+
   return (
     <div className='header'>
        <img  src={Logo}   className='logo' alt=''/>
        
-     <ul className={ click ? 'header-menu active' : 'header-menu'}>
+     <ul className={ click ? 'header-menu active' : 'header-menu'}   style={{color:darkMode ? 'white': ''}}>
      <li>Home</li>
      <li>Programs</li>
      <li>Why Us</li>

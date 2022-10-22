@@ -135,8 +135,11 @@ color: white;
 
 .right-h>.btn {
  position: absolute;
- right: 3rem;top:2rem; color: black;
- background: var(--darkgreen);
+ right: 3rem;
+ top: 1.8rem;
+ background: none;
+  color: black;
+border-radius: 34px;
  /* background: linear-gradient(180deg, #7DCE13 26.71%, #5BB318 99.36%);
    box-shadow: 0px 20px 24px 3px rgb(43, 122, 11);
    border-radius: 34px;

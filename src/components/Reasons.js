@@ -5,8 +5,15 @@ import image2 from '../assets/gym3.jpg';
 import image3 from '../assets/gym7.jpg';
 import image4 from '../assets/gym5.jpg';
 import correct from '../assets/correct.png';
+import { themeContext } from '../Context';
+import { useContext } from 'react';
+
 
 const Reasons = () => {
+
+  const theme = useContext(themeContext);
+ const darkMode = theme.state.darkMode;
+
   return (
     <div className='Reasons' id='reasons'>
      <div className='left-r'>
@@ -16,13 +23,13 @@ const Reasons = () => {
       <img  src={image4} alt=''/>
      </div>
         
-        <div className='right-r'>
+        <div className='right-r'  >
          <span>FitHouse</span>
          <div>
           <span className='stroke-text'>why</span>
-          <span>  choose us?</span>
+          <span style={{color:'var(--darkGrey)'}}>  choose us?</span>
          </div>
-         <div className='details-r'>
+         <div className='details-r' style={{color:darkMode ? 'white': ''}}   >
             <div>
              <img   src={correct}  alt=''/>
              <span>TRAIN SMARTER AND FASTER THAN BEFORE</span>
