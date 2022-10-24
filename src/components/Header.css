@@ -9,7 +9,16 @@
  height: 3rem;
 }
 
+.btn {
+  /*position: absolute;
+  right: 3rem;
+  top: 1.8rem;*/
+  background: none;
+ top:-33rem
+  /*color: black;
+  border-radius: 34px;*/
 
+}
 
 .header-menu {
  list-style: none;

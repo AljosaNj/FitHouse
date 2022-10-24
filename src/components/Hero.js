@@ -1,7 +1,7 @@
 import React from 'react'
 import './Hero.css'
 import Header from './Header';
-import Toggle from './Toggle';
+//import Toggle from './Toggle';
 import HeroImage from '../assets/fit6.png'
 import Fit from '../assets/fit3.png'
 import Muscle from '../assets/muscle.png'
@@ -64,10 +64,10 @@ const Hero = () => {
      </div>
      </div>
 <div className='right-h'>
- <div className='btn'>
+{/*<div className='btn'>
   <Toggle/>
- </div>
-{/*<button className='btn'>Join Now</button>*/}
+  </div>*/}
+
 
 <motion.div 
 initial={{right:'-1rem'}}

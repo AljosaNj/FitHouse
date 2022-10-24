@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import './Header.css'
 import Logo from '../assets/logo1.png'
+import Toggle from './Toggle';
 //import Bars from '../assets/bars.png'
 import { FaBars,FaTimes } from "react-icons/fa";
 import { themeContext } from '../Context';
@@ -16,7 +17,9 @@ const [click, setClick] = useState(false);
   return (
     <div className='header'>
        <img  src={Logo}   className='logo' alt=''/>
-       
+          <div className='btn'>
+  <Toggle/>
+  </div>
      <ul className={ click ? 'header-menu active' : 'header-menu'}   style={{color:darkMode ? 'white': ''}}>
      <li>Home</li>
      <li>Programs</li>
