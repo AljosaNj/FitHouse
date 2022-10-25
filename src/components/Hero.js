@@ -7,7 +7,7 @@ import Fit from '../assets/fit3.png'
 import Muscle from '../assets/muscle.png'
 import Run from '../assets/fit2.png'
 import ColGreen from '../assets/green.png'
-
+import NumberCounter from 'number-counter'
 import {motion} from 'framer-motion'
 
 const Hero = () => {
@@ -45,15 +45,22 @@ const Hero = () => {
      {/*figures */}
      <div className='figures'>
    <div>
-    <span>+140</span>
+    <span>
+<NumberCounter end={140} start={100}  delay='4' preFix="+"/>
+
+    </span>
     <span>different exercises</span>
    </div>
      <div>
-    <span>+978</span>
+    <span>
+<NumberCounter end={978} start={800}  delay='4' preFix="+"/>
+    </span>
     <span>of our members</span>
    </div>
      <div>
-    <span>+50</span>
+    <span>
+    <NumberCounter end={50} start={0}  delay='4' preFix="+"/>  
+    </span>
     <span>fitness programs</span>
    </div>
      </div>
