@@ -20,7 +20,7 @@ const [click, setClick] = useState(false);
           <div className='btn'>
   <Toggle/>
   </div>
-     <ul className={ click ? 'header-menu active' : 'header-menu'}   style={{color:darkMode ? 'white': ''}}>
+     <ul className={ click ? 'header-menu active' : 'header-menu '}   style={{color:darkMode ? 'white': ''}}>
      <li>Home</li>
      <li>Programs</li>
      <li>Why Us</li>
