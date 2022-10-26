@@ -72,7 +72,7 @@
     flex-direction: column;
     background-color: var(--appColor);
     padding: 4rem;
- position: fixed;
+ position: absolute;
   right: 2rem;
   z-index: 99;
   
