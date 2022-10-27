@@ -71,20 +71,28 @@
 }
 .header-menu-active {
   flex-direction: column;
-    background-color: var(--appColor);
+   
+  font-weight: bold;
     padding: 4rem;
     position: absolute;
-    right: 1rem;
+    right: 2rem;
     z-index: 99;
-  
-  
-    background: rgba(0, 0, 0, 0.35);
+  list-style: none;
+  display: flex;
+    gap: 1rem;
+    background: rgba(0, 0, 0, 0.45);
     position: absolute;
     top: 8;
    
     transition: 0.3s;
 }
 
+
+
+.header-menu-active>li:hover {
+  cursor: pointer;
+  color: var(--green);
+}
 
  /* .header-menu {
  
