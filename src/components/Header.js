@@ -8,8 +8,9 @@ import { themeContext } from '../Context';
 import { useContext } from 'react';
 
 const Header = () => {
-const [click, setClick] = useState(false);
- const handleClick = () => setClick(!click);
+
+ const [click, setClick] = useState(false);
+// const handleClick = () => setClick(!click);
 
  const theme = useContext(themeContext);
  const darkMode = theme.state.darkMode
@@ -20,24 +21,29 @@ const [click, setClick] = useState(false);
           <div className='btn'>
   <Toggle/>
   </div>
-     <ul className={ click ? 'header-menu active' : 'header-menu '}   style={{color:darkMode ? 'white': ''}}>
+     <ul className={ click ? "header-menu-active" : "header-menu "}  onClick={() => setClick(false)}     style={{color:darkMode ? 'white': ''}}>
      <li>Home</li>
      <li>Programs</li>
      <li>Why Us</li>
      <li>Plans</li>
      <li>Testimonilas</li>
    </ul>
-  <div className="hamburger" onClick={handleClick}>
+  <div className="hamburger" onClick={() => setClick(!click)}>
   {click ? (
-    <FaTimes className="iconhambx"  size={20} /*style={{color: "#fff"}}*//>
+    <FaTimes className="iconhambx"  size={20} />
   ): (
-    <FaBars  className="iconhamb"  size={20}/* style={{color: "#fff"}}*//>
+    <FaBars  className="iconhamb"  size={20} />
   )}
 
 
 </div>
  
     </div>
+    
+    
+    
+
+
   )
 }
 
@@ -74,3 +80,49 @@ const [menuOpened,setMenuOpened] = useState(false)
        )}
  
     </div> */
+
+
+
+
+    /*
+    
+    
+    const [click, setClick] = useState(false);
+ const handleClick = () => setClick(!click);
+
+ const theme = useContext(themeContext);
+ const darkMode = theme.state.darkMode
+
+  return (
+    <div className='header'>
+       <img  src={Logo}   className='logo' alt=''/>
+          <div className='btn'>
+  <Toggle/>
+  </div>
+     <ul className={ click ? "header-menu active" : "header-menu "}   style={{color:darkMode ? 'white': ''}}>
+     <li>Home</li>
+     <li>Programs</li>
+     <li>Why Us</li>
+     <li>Plans</li>
+     <li>Testimonilas</li>
+   </ul>
+  <div className="hamburger" onClick={handleClick}>
+  {click ? (
+    <FaTimes className="iconhambx"  size={20} />
+  ): (
+    <FaBars  className="iconhamb"  size={20}/* />
+  )}
+
+
+</div>
+ 
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    */

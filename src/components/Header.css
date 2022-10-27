@@ -66,8 +66,27 @@
 
 @media screen and (max-width: 768px) {
 
+.header-menu {
+  display: none;
+}
+.header-menu-active {
+  flex-direction: column;
+    background-color: var(--appColor);
+    padding: 4rem;
+    position: absolute;
+    right: 1rem;
+    z-index: 99;
+  
+  
+    background: rgba(0, 0, 0, 0.35);
+    position: absolute;
+    top: 8;
+   
+    transition: 0.3s;
+}
 
-   .header-menu {
+
+ /* .header-menu {
  
 
 flex-direction: column;
@@ -93,7 +112,7 @@ flex-direction: column;
  
 
   
-}
+}*/
  
   .hamburger {
    display: initial;
