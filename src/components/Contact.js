@@ -13,7 +13,7 @@ const Contact = () => {
          <span>saturday: <i>7:00am - 10:30pm</i></span>
           <span>sunday : <i>12:00pm - 18:30pm</i></span>
     </div>
-     <div className='blur contact-blur'></div>
+    {/*<div className='blur contact-blur'></div> */} 
        <div className='address'>
         <span>Information</span>
           <span>Phone : <i>+123-556-7788</i></span>
