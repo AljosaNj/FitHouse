@@ -5,7 +5,7 @@ import Reasons from './components/Reasons';
 import Plans from './components/Plans';
 import Coach from './components/Coach';
 //import Contact from './components/Contact';
-//import Footer from './components/Footer';
+import Footer from './components/Footer';
 import {useContext} from 'react';
 import {themeContext} from './Context'
 
@@ -28,7 +28,7 @@ const darkMode = theme.state.darkMode;
          <Reasons/>
         <Plans/>
         <Coach/>
-        
+        <Footer/>
        
     </div>
   );
