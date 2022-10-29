@@ -4,6 +4,7 @@ import './Contact.css';
 const Contact = () => {
   return (
     <div className='contact'>
+       <div className='blur contact-blur'></div>
     <div className='time'>
      <span  >Opening hours</span>
      <span>Monday : <i>7:00am - 10:30pm</i></span>
@@ -15,7 +16,7 @@ const Contact = () => {
     </div>
    
        <div className='address'>
-        <div className='blur contact-blur'></div> 
+        
         <span>Information</span>
           <span>Phone : <i>+123-556-7788</i></span>
       <span>Phone : <i>+111-333-4444</i></span>
