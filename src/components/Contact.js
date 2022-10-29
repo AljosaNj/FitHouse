@@ -6,15 +6,16 @@ const Contact = () => {
     <div className='contact'>
     <div className='time'>
      <span  >Opening hours</span>
-     <span>monday : <i>7:00am - 10:30pm</i></span>
-      <span>tuesday : <i>7:00am - 10:30pm</i></span>
-       <span>wednesday : <i>7:00am - 10:30pm</i></span>
-        <span>friday : <i>7:00am - 10:30pm</i></span>
-         <span>saturday: <i>7:00am - 10:30pm</i></span>
-          <span>sunday : <i>12:00pm - 18:30pm</i></span>
+     <span>Monday : <i>7:00am - 10:30pm</i></span>
+      <span>Tuesday : <i>7:00am - 10:30pm</i></span>
+       <span>Wednesday : <i>7:00am - 10:30pm</i></span>
+        <span>Friday : <i>7:00am - 10:30pm</i></span>
+         <span>Saturday: <i>7:00am - 10:30pm</i></span>
+          <span>Sunday : <i>12:00pm - 18:30pm</i></span>
     </div>
-    {/*<div className='blur contact-blur'></div> */} 
+   
        <div className='address'>
+        <div className='blur contact-blur'></div> 
         <span>Information</span>
           <span>Phone : <i>+123-556-7788</i></span>
       <span>Phone : <i>+111-333-4444</i></span>
