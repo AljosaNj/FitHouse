@@ -4,7 +4,7 @@ import {programsData} from '../data/programsData';
 
 const Programs = () => {
   return (
-    <div className='Programs' id='programs'>
+    <div className='programs' id='programs'>
     {/*header */}
     <div className='programs-header'>
      <span className='stroke-text'>Explorer our</span>

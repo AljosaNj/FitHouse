@@ -6,11 +6,14 @@ import Toggle from './Toggle';
 import { FaBars,FaTimes } from "react-icons/fa";
 import { themeContext } from '../Context';
 import { useContext } from 'react';
+import {Link} from 'react-scroll';
 
 const Header = () => {
 
  const [click, setClick] = useState(false);
-// const handleClick = () => setClick(!click);
+ const handleClick = () => setClick(!click);
+
+const closeMenu = () => setClick(false)
 
  const theme = useContext(themeContext);
  const darkMode = theme.state.darkMode
@@ -21,14 +24,14 @@ const Header = () => {
           <div className='btn'>
   <Toggle/>
   </div>
-     <ul className={ click ? "header-menu-active" : "header-menu "}  onClick={() => setClick(false)}     style={{color:darkMode ? 'white': ''}}>
-     <li>Home</li>
-     <li>Programs</li>
-     <li>Why Us</li>
-     <li>Plans</li>
-     <li>Testimonilas</li>
+     <ul className={ click ? "header-menu-active" : "header-menu "}    style={{color:darkMode ? 'white': ''}}>
+     <li ><Link  activeClass='active' to='header' smooth='true'  onClick={closeMenu}  >Home</Link>   </li>
+     <li><Link to='programs'  smooth='true'  onClick={closeMenu}  >Programs</Link> </li>
+     <li    ><Link to='Reasons' smooth='true'  onClick={closeMenu}  >Why Us</Link> </li> 
+     <li><Link to='coach'  smooth='true'  onClick={closeMenu}  >Our Team</Link> </li>
+     <li  ><Link to='contact' smooth='true'   onClick={closeMenu}  >Contact</Link> </li>
    </ul>
-  <div className="hamburger" onClick={() => setClick(!click)}>
+  <div className="hamburger"onClick={handleClick} >
   {click ? (
     <FaTimes className="iconhambx"  size={20} />
   ): (

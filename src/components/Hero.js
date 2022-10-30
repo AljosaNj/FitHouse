@@ -9,13 +9,15 @@ import Run from '../assets/fit2.png'
 import ColGreen from '../assets/green.png'
 import NumberCounter from 'number-counter'
 import {motion} from 'framer-motion'
+import {Link} from 'react-scroll';
+
 
 const Hero = () => {
 
   const transition = {type: 'spring', duration: 3}
   const mobile = window.innerWidth<=768 ? true: false;
   return (
-    <div className='hero'>
+    <div className='hero' id='home'>
 
       <div className='blur hero-blur'></div>
      <div className='left-h'>
@@ -66,8 +68,8 @@ const Hero = () => {
      </div>
      {/*herro buttons */}
      <div className='hero-buttons'>
-       <button className='btn'>Get Started</button>
-       <button className='btn'>Learn More</button>
+       <button className='btn'>  <Link   to='plans' smooth='true'   >Get Started</Link>   </button>
+       <button className='btn'> <Link   to='contact' smooth='true'   >Contact</Link> </button>
      </div>
      </div>
 <div className='right-h'>

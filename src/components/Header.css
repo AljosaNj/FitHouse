@@ -126,6 +126,7 @@ flex-direction: column;
    display: initial;
    margin-top: 1rem;
    z-index: 99;
+   cursor: pointer;
   }
 }
 
